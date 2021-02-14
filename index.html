@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>PPT</title>
+  </head>
+  <body>
+    <!--Página principal de juego-->
+    <main>
+      <section class="options">
+        <h1 class="options-title">¿Piedra, papel o tijeras?</h1>
+        <div class="options-tools">
+          <div class="tools-display">
+            <div class="rock">
+              <img src="img/rock.png" alt="Piedra" />
+            </div>
+            <div class="paper">
+              <img src="img/paper.png" alt="Papel" />
+            </div>
+            <div class="scissors">
+              <img src="img/scissors.png" alt="Tijeras" />
+            </div>
+          </div>
+        </div>
+        <audio id="clickSound" class="audio">
+          <source type="audio/mp3" src="audio/click.mp3" />
+        </audio>
+      </section>
+      <section class="game">
+        <div class="game-display">
+          <div class="game-player">
+            <h3 class="name-player">Player</h3>
+            <img />
+            <div class="counter-player"></div>
+          </div>
+          <div class="result">
+            <h2 class="game-title"></h2>
+            <img />
+          </div>
+          <div class="game-machine">
+            <h3 class="name-machine">Máquina</h3>
+            <img />
+            <div class="counter-machine"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Página modal comienzo-->
+    <section class="startScreen">
+      <div class="startScreen-mainSection">
+        <div class="logo">
+          <img src="img/intro.png" alt="Logotipo juego" />
+        </div>
+        <form>
+          <label for="name">Introduce tu nombre:</label>
+          <input type="text" id="name" autofocus autocomplete="off" />
+        </form>
+        <div class="play">
+          <img src="img/play.png" alt="Botón empezar a jugar" />
+        </div>
+      </div>
+    </section>
+    <!--Página modal final-->
+    <section class="finalScreen hidden">
+      <div class="finalScreen-mainSection">
+        <div class="gif">
+          <h2></h2>
+          <img />
+        </div>
+        <div class="replay">
+          <img src="img/replay.png" alt="Botón volver a jugar" />
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
